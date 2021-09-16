@@ -505,7 +505,18 @@ async function startCapture() {
         
         
         //grab the audio and add it to the stream coming from the canvas
-        audioStream = await navigator.mediaDevices.getUserMedia(audioStreamOptions);
+      //  audioStream = await navigator.mediaDevices.getUserMedia(audioStreamOptions);
+        navigator.mediaDevices.getUserMedia(audioStreamOptions)
+        .then(function(astream) {
+            console.log("got audio stream");
+            audioStream = astream;
+            console.log ("audioStream", audioStream);
+            
+          })
+          .catch(function(err) {
+            /* handle the error */
+            console.log("sream from audio error");
+          });
 
 
 
