@@ -13,11 +13,6 @@ app.get('/', function(req, res,next) {
     res.sendFile(__dirname + '/index1.html');
 });
 
-spawn('ffmpeg',['-h']).on('error',function(m){
-
-	console.error("FFMpeg not found in system cli; please install ffmpeg properly or make a softlink to ./!");
-	process.exit(-1);
-});
 
 
 
