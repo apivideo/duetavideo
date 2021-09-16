@@ -495,7 +495,7 @@ async function startCapture() {
           });
 
         audioStreamOptions= {
-            mimeType: "video/webm;codecs=vp8,opus",
+           // mimeType: "video/webm;codecs=vp8,opus",
            // mimeType: "video/mp4",
             audio: { 
                 deviceId: micId}
