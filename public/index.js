@@ -318,6 +318,10 @@ function createStream(){
              }
             videoAudioIn = audioContext.createMediaStreamSource(videostream);
 
+             videoAudioin2 = audioContext.createMediaStreamSource(videostream);
+             //i want to send videoAudio2 to te speakers
+             videoAudioin2.connect(audioContext.destination);
+
             //change the volume of the video in
             var gainNode = audioContext.createGain();
             var volume = document.getElementById("volume").value/100;
