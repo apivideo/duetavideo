@@ -11,7 +11,7 @@ cameraOnly = false;
 var videoUrl;
 
 //delay on mic and camera for syncing purposes
-var micDelay = 0.28;
+var micDelay = 0.25;
 
 
 window.onload  = function(){ 
