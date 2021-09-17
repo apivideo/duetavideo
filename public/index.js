@@ -58,7 +58,12 @@ window.onload  = function(){
         videoUrl = videoUrlform.value;
         console.log("URL updated", videoUrl);
     });
+    videoDelayForm = document.getElementById("delay");
+    videoDelayForm.addEventListener('change', (event)=>{
+        micDelay = videoDelayForm.value;
+        console.log("delay time changed to " +micDelay);
 
+    });
     //console.log("loaded");
     // is this a mobile device - no screen share - and 2 cameras?
     //see if screen capture is supported

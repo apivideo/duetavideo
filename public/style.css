@@ -162,16 +162,8 @@
     font-size: small;
     
 }
-#captions{
-    padding:20px;
-    display:flex;
-    align-items:center;
-}
-#captionspicker-select{
-    height:40px;
-    width:70%;
-    font-size: x-large;
-    
+.sliderValue{
+    color:black;
 }
 #showCanvas{
     text-align:left;

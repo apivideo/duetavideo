@@ -72,7 +72,17 @@
                         volume of video
                     </div> 
                 <div class="slidecontainer">
-                    <input type="range" min="0" max="100" value="50" class="slider" id="volume">
+                    <input type="range" min="0" max="100" value="50" class="slider" id="volume" onchange="this.nextElementSibling.innerText = this.value;">
+                    <span class="sliderValue">50</span>
+          
+                </div>
+                <div class="settingSubHeadings">
+                    video delay
+                </div> 
+                <div class="slidecontainer">
+                   
+                    <input type = "range" min="0" max="0.5" value = "0.25" step="0.05" class="slider" id="delay" onchange="this.nextElementSibling.innerText = this.value;">
+                    <span class="sliderValue">0.25</span>
                 </div>
             </div>
             
