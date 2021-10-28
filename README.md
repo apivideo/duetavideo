@@ -1,10 +1,10 @@
 # Duet a video
 
-https://img.shields.io/github/followers/api.video?style=social
+![badge](https://img.shields.io/github/followers/api.video?style=social)
 
-https://img.shields.io/github/stars/apivideo/duetavideo?style=social
+![badge](https://img.shields.io/github/stars/apivideo/duetavideo?style=social)
 
-https://img.shields.io/discourse/topics?server=https%3A%2F%2Fcommunity.api.video
+![badge](https://img.shields.io/discourse/topics?server=https%3A%2F%2Fcommunity.api.video)
 
 ![](https://github.com/apivideo/API_OAS_file/blob/master/apivideo_banner.png)
 
