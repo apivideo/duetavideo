@@ -20,7 +20,7 @@ to install all the required modules.
 
 ## JavaScript
 
-The first 3 lines of /public/index.js havd the variables you must change to get your own version of duet a video up and running. The RTMP and live URLS are generated when you [create a livestrea](https://docs.api.video/reference/post_live-streams), and the delegated_token is created from the [Generate an uplaod token](https://docs.api.video/reference/post_upload-tokens) endpoint at api.video.  (There are links to tutorials in the documentation for each endpoint).
+The first 3 lines of /public/index.js havd the variables you must change to get your own version of duet a video up and running. The RTMP and live URLS are generated when you [create a livestream](https://docs.api.video/reference/post_live-streams), and the delegated_token is created from the [Generate an uplaod token](https://docs.api.video/reference/post_upload-tokens) endpoint at api.video.  (There are links to tutorials in the documentation for each endpoint).
 
 Once you update these, you can run the Node server (NPM start), and the app will be upand running!
 
