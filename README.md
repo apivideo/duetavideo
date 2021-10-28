@@ -1,6 +1,6 @@
 # Duet a video
 
-![badge](https://img.shields.io/github/followers/api.video?style=social)
+![badge](https://img.shields.io/twitter/follow/api_video?style=social)
 
 ![badge](https://img.shields.io/github/stars/apivideo/duetavideo?style=social)
 
