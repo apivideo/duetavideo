@@ -234,13 +234,33 @@ function createStream(){
     videoElem.addEventListener('play', function(){
        console.log('video playing');
             //draw the 2 streams to the canvas
-            cameraX0 = ctx.canvas.width*1/12;
-            cameraY0 = 0;
-    
-            //x1 and y1 are how BIG the image should be not x,y coordinates on the cavas
-            cameraX1 = ctx.canvas.width*4/12;
-            cameraY1= ctx.canvas.height;  
-    
+
+            //camera
+            var cameraOffset_w = cameraElem.offsetWidth;
+            var cameraOffset_h = cameraElem.offsetHeight;
+            cameraAspect = cameraOffset_w/cameraOffset_h;
+
+            if(cameraOffset_h<1){
+                //portrait as desired
+                cameraX0 = ctx.canvas.width*1/12;
+                cameraY0 = 0;
+        
+                //x1 and y1 are how BIG the image should be not x,y coordinates on the cavas
+                cameraX1 = ctx.canvas.width*4/12;
+                cameraY1= ctx.canvas.height;  
+            }
+            else{
+                //landscape - thge browser does not support the aspectRatio constraints
+                               
+                cameraX0 = 0;
+                cameraY0 = 7/32*ctx.canvas.height;
+        
+                //x1 and y1 are how BIG the image should be not x,y coordinates on the cavas
+                cameraX1 = ctx.canvas.width*6/12;
+                cameraY1= ctx.canvas.width*6/12*9/16;
+                             
+                            
+            }
             //here we change latout based on the aspect ratio of the video
     
             var videoOffset_w = videoElem.offsetWidth;
@@ -322,10 +342,9 @@ function createStream(){
                 videostream = videoElem.mozCaptureStream();
              }
             videoAudioIn = audioContext.createMediaStreamSource(videostream);
-
-             videoAudioin2 = audioContext.createMediaStreamSource(videostream);
-             //i want to send videoAudio2 to te speakers
-             videoAudioin2.connect(audioContext.destination);
+            videoAudioin2 = audioContext.createMediaStreamSource(videostream);
+            //i want to send videoAudio2 to te speakers
+            videoAudioin2.connect(audioContext.destination);
 
             //change the volume of the video in
             var gainNode = audioContext.createGain();
@@ -599,7 +618,7 @@ function startRecording() {
         if (event.data && event.data.size > 0) {
             console.log("event.data", event.data);
             const blobby = new Blob([event.data], {type: mediaRecorder.mimeType});
-            console.log("blobby", blobby);
+           // console.log("blobby", blobby);
             recordedBlobs.push(blobby);
             console.log(recordedBlobs);
             console.log("handledataavailable", recordedBlobs.length);
