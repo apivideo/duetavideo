@@ -10,7 +10,7 @@
 
 [api.video](https://api.video) provides video APIs for building, scaling and operating on-demand and live streaming videos in your app, software or platform. This demo app creates a video duet (like on TikTok) that is uploaded to your api.video account. It can then be eassily shared as a [video on demand](https://api.video/what-is/vod-video-on-demand) for your friends to watch!
 
-Try it yourself at [duet.a.video](https://duet.a.video).
+Try it yourself at [bumper.a.video](https://bumper.a.video).
 
 ## NodeJS
 
@@ -26,9 +26,9 @@ to install all the required modules.
 
 ## JavaScript
 
-The first 3 lines of /public/index.js havd the variables you must change to get your own version of duet a video up and running. The RTMP and live URLS are generated when you [create a livestream](https://docs.api.video/reference/post_live-streams), and the delegated_token is created from the [Generate an uplaod token](https://docs.api.video/reference/post_upload-tokens) endpoint at api.video.  (There are links to tutorials in the documentation for each endpoint).
+The first 3 lines of /public/index.js have the variables you must change to get your own version of duet a video up and running. The RTMP and live URLS are generated when you [create a livestream](https://docs.api.video/reference/post_live-streams), and the delegated_token is created from the [Generate an uplaod token](https://docs.api.video/reference/post_upload-tokens) endpoint at api.video.  (There are links to tutorials in the documentation for each endpoint).
 
-Once you update these, you can run the Node server (NPM start), and the app will be upand running!
+Once you update these, you can run the Node server (NPM start), and the app will be up and running!
 
 For more details on how we built this, please read the [blog post](https://api.video/blog/tutorials/video-duets-in-the-browser). It is also heavily based on [record.a.video](https://record.a.video) - links to Github and a tutorial can be found there.
 
