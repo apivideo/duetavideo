@@ -1,5 +1,3 @@
-# Duet a video
-
 [![badge](https://img.shields.io/twitter/follow/api_video?style=social)](https://twitter.com/intent/follow?screen_name=api_video)
 
 [![badge](https://img.shields.io/github/stars/apivideo/duetavideo?style=social)](https://github.com/apivideo/duetavideo)
@@ -8,6 +6,7 @@
 
 ![](https://github.com/apivideo/API_OAS_file/blob/master/apivideo_banner.png)
 
+# Duet a video
 [api.video](https://api.video) provides video APIs for building, scaling and operating on-demand and live streaming videos in your app, software or platform. This demo app creates a video duet (like on TikTok) that is uploaded to your api.video account. It can then be easily shared as a [video on demand](https://api.video/what-is/vod-video-on-demand) for your friends to watch!
 
 Try it yourself at [bumper.a.video](https://bumper.a.video).
