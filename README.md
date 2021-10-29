@@ -6,6 +6,8 @@
 
 ![](https://github.com/apivideo/API_OAS_file/blob/master/apivideo_banner.png)
 
+api.video is an API that encodes on the go to facilitate immediate playback, enhancing viewer streaming experiences across multiple devices and platforms. You can stream live or on-demand online videos within minutes.
+
 # Duet a video
 [api.video](https://api.video) provides video APIs for building, scaling and operating on-demand and live streaming videos in your app, software or platform. This demo app creates a video duet (like on TikTok) that is uploaded to your api.video account. It can then be easily shared as a [video on demand](https://api.video/what-is/vod-video-on-demand) for your friends to watch!
 
