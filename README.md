@@ -12,9 +12,8 @@
 
 
 # Duet a video
-[api.video](https://api.video) provides video APIs for building, scaling and operating on-demand and live streaming videos in your app, software or platform. This demo app creates a video duet (like on TikTok) that is uploaded to your api.video account. It can then be easily shared as a [video on demand](https://api.video/what-is/vod-video-on-demand) for your friends to watch!
 
-Try it yourself at [bumper.a.video](https://bumper.a.video).
+Try it yourself at [duet.a.video](https://duet.a.video).
 
 ## NodeJS
 
